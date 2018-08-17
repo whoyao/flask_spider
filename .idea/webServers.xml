@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d8a2df6a-bdf1-4462-a0b1-00fe435052b6" name="cyberlab" url="http://202.120.37.147:5050">
+        <fileTransfer host="202.120.37.147" port="12522" privateKey="$USER_HOME$/.ssh/id_rsa_cyber" rootFolder="/home/cybernp" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="12522" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

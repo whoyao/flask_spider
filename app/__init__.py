@@ -27,12 +27,12 @@ def create_app(config_name):
     #初始化蓝本
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
-    from .fiction import fiction as fiction_blueprint
-    app.register_blueprint(fiction_blueprint)
-    #初始化api
-    from .api import api
-    api.init_app(app)
-    from .api import auth_api as authapi_blueprint
-    app.register_blueprint(authapi_blueprint)
+    # from .fiction import fiction as fiction_blueprint
+    # app.register_blueprint(fiction_blueprint)
+    # #初始化api
+    # from .api import api
+    # api.init_app(app)
+    # from .api import auth_api as authapi_blueprint
+    # app.register_blueprint(authapi_blueprint)
 
     return app

@@ -154,6 +154,13 @@ class Commparam(db.Model):
     param_stat = db.Column(db.String(2), default='0')
 
 
+class HuyaoTest(db.Model):
+    __tablename__ = 'test1'
+    # 参数名称
+    name = db.Column(db.String(20))
+    val = db.Column(db.Char(1))
+
+
 # 加载用户的回调函数
 @login_manager.user_loader
 def load_user(user_id):

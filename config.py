@@ -45,7 +45,8 @@ class Config:
     """
     FLATPAGES_AUTO_RELOAD = True
     FLATPAGES_EXTENSION = '.md'
-    SECRET_KEY = os.environ.get('SECRET_KEY') or 'can you guess it'
+    SECRET_KEY = 'cyber215'
+    #SECRET_KEY = os.environ.get('SECRET_KEY') or 'can you guess it'
     DEBUG = True
     # sqlalchemy两个主要配置
     # ORM底层所访问数据库URI
@@ -67,7 +68,7 @@ class DevelopmentConfig(Config):
     """
 
     #可以通过修改SQLALCHEMY_DATABASE_URI来控制访问不同数据库
-    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://lzx:123@192.168.66.188/blog?charset=utf8'
+    SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://cybernp:3006@127.0.0.1'
 
 
 class TestConfig(Config):
